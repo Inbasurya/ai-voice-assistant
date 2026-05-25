@@ -8,7 +8,7 @@ from livekit.plugins.openai import LLM
 load_dotenv()
 
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("restaurant-agent")
+logger = logging.getLogger("carwash-agent")
 
 SYSTEM_PROMPT = """You are a helpful phone assistant for REACT Car Wash. Speak in short, simple sentences (max 2 sentences). 
 
