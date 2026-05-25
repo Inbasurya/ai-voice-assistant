@@ -36,7 +36,7 @@ def get_token():
     )
     
     return {
-        "url": os.getenv("LIVEKIT_URL"),
+        "url": os.getenv("wss://ai-voice-responder-oy0fiksj.livekit.cloud"),
         "token": token.to_jwt()
     }
 
