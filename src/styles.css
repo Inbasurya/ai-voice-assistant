@@ -254,7 +254,8 @@ ul.nav-links li a:hover {
   nav { position: relative; }
   #nav { font-size: 15px; letter-spacing: 1px; }
   .hamburger { display: block; }
-
+  #Heading { font-size: 28px; }
+  .Paragraph { text-align: left; }
   ul.nav-links {
     display: none;
     flex-direction: column;
