@@ -12,6 +12,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     fetch('https://ai-voice-assistant-1-mkkg.onrender.com/')
@@ -87,12 +88,15 @@ const App = () => {
       <header id="Navbar">
         <nav>
           <h1 id="nav">REACT CAR WASH & DETAILING</h1>
-          <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <i className={`fa-solid ${menuOpen ? 'fa-x' : 'fa-bars'}`}></i>
+    </button>
+          <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+      <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+      <li><a href="#menu" onClick={() => setMenuOpen(false)}>Menu</a></li>
+      <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+      <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+    </ul>
         </nav>
       </header>
       
