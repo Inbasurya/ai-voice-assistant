@@ -13,7 +13,7 @@ const App = () => {
   const [isVoiceActive, setIsVoiceActive] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:8000/')
+    fetch('https://ai-voice-assistant-1-mkkg.onrender.com/')
       .then(response => response.json())
       .then(data => {
         setMessage(data.message);
@@ -29,7 +29,7 @@ const App = () => {
       console.log("Starting voice assistant...");
       setIsVoiceActive(true); 
 
-      const response = await fetch("http://127.0.0.1:8000/getToken");
+      const response = await fetch("https://ai-voice-assistant-1-mkkg.onrender.com/");
       const data = await response.json();
       console.log("Token received:", data);
                                          
