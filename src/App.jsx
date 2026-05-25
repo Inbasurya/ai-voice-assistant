@@ -29,7 +29,7 @@ const App = () => {
       console.log("Starting voice assistant...");
       setIsVoiceActive(true); 
 
-      const response = await fetch("https://ai-voice-assistant-1-mkkg.onrender.com/");
+      const response = await fetch("https://ai-voice-assistant-1-mkkg.onrender.com/getToken");
       const data = await response.json();
       console.log("Token received:", data);
                                          
