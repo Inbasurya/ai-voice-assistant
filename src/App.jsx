@@ -157,16 +157,16 @@ const App = () => {
         <div>
           <h4 className="H3">Our Service Menu</h4>
           <ul className="Menu" id="menu">
-            <li>Basic Wash - 250</li>
-            <li>Exterior Polish - 450</li>
-            <li>Interior Vacuum - 150</li>
-            <li>Full Detailing - 1200</li>
-            <li>Ceramic Coating - 3500</li>
-            <li>Engine Bay Cleaning - 400</li>
-            <li>Windshield Treatment - 180</li>
-            <li>Wheel Rim Restoration - 300</li>
-            <li>Odor Eliminator - 120</li>
-            <li>Leather Conditioning - 250</li>
+            <li>Basic Wash - 650 </li>
+            <li>Exterior Polish - 1450 </li>
+            <li>Interior Vacuum - 350 </li>
+            <li>Full Detailing - 2100 </li>
+            <li>Ceramic Coating - 3500 </li>
+            <li>Engine Bay Cleaning - 500 </li>
+            <li>Windshield Treatment - 580 </li>
+            <li>Wheel Rim Restoration - 1400 </li>
+            <li>Odor Eliminator - 1200 </li>
+            <li>Leather Conditioning - 1150 </li>
           </ul>
         </div>
 
